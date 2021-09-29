@@ -12,15 +12,12 @@ import frc.robot.subsystems.LemonShooterSub;
 import frc.robot.subsystems.TubertSub;
 
 public class ShootLemonCommand extends CommandBase {
-  // getters
   private final TubertSub m_tubertSub;
   private final LemonShooterSub m_lemonShooterSub;
 
   public ShootLemonCommand(TubertSub tubeSub, LemonShooterSub lemonSub) {
-    //setters
     m_lemonShooterSub = lemonSub;
     m_tubertSub = tubeSub;
-    //subsystem dependencies
     addRequirements(m_tubertSub,m_lemonShooterSub);
 
   }
